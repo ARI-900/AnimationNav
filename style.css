@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: all;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.pexels.com/photos/1564473/pexels-photo-1564473.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+header {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+#nav {
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#nav h1 {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nav i {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* cretae resposive nav bar */
+#full {
+    height: 100%;
+    width: 35%;
+    background: rgba(255, 255, 255, 0.404);
+    position: absolute;
+    top: 0px;
+    right: -35%;
+    
+    backdrop-filter: blur(15px);
+    padding-top: 100px;
+}
+#full h4 {
+    font-size: 2.5rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: start;
+    padding: 1rem 3rem;
+
+}
+
+#full i {
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+
+    transition: all 0.7s ease;
+}
+#full i:hover {
+    background-color: #000;
+    color: white;
+}
