@@ -4,6 +4,7 @@ const cross = document.querySelector('#full i');
 let tline = gsap.timeline();
 
 tline.to('#full', {
+    display: 'block',
     right: '0px',
     duration: 0.28,
     ease: 'power2.out',

@@ -2,28 +2,23 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
-    position: relative;
-}
-
-body {
-    overflow-x: hidden;
-    overflow-y: all;
+    overflow: hidden;
 }
 
 #wrapper {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url(https://images.pexels.com/photos/1564473/pexels-photo-1564473.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    object-fit: cover;
 }
 
 header {
@@ -41,6 +36,7 @@ header {
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 #nav i {
     font-size: 2rem;
     font-weight: bold;
@@ -55,7 +51,7 @@ header {
     position: absolute;
     top: 0px;
     right: -35%;
-    
+    display: none;
     backdrop-filter: blur(15px);
     padding-top: 100px;
 }
@@ -84,4 +80,42 @@ header {
 #full i:hover {
     background-color: #000;
     color: white;
+}
+
+
+/* media query */
+@media screen and (max-width: 800px) {
+    #nav h1 {
+        font-size: 1.3rem;
+    }
+    #nav i {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    #full h4 {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    
+    }
+    
+    #full i {
+        font-size: 1em;
+        font-weight: 700;
+    }
+    
+}
+
+@media screen and (max-width: 325px) {
+    #full h4 {
+        font-size: 0.80rem;
+    }
+    #full i {
+        font-size: 0.8rem;
+        padding: 4px;
+        font-weight:bold;
+    }
+    #nav h1 {
+        font-size: 1rem;
+    }
+
 }
